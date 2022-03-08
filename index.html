@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+  <title>Tables, Forms, Tabbed Browsing, and Screen Reading</title>
+</head>
+
+<body>
+  <header>
+    <h1>Accessible Forms & Tables</h1>
+  </header>
+  <h2>Accesible Form Example</h2>
+  <section id="ski_form">
+    <form class="" action="index.html" method="post">
+      <h3>Colorado Ski Form</h3>
+      <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+      <section id="form_questions">
+        <p>
+          <label for="name">
+            <span>Name: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" id="name" name="username">
+        </p>
+        <p>
+          <label for="favcity">Which is your favorite ski resort in colorado?</label>
+          <select id="favcity" name="select">
+            <option value="1">Arapahoe Basin</option>
+            <option value="2">Breckenridge</option>
+            <option value="3">Copper Mountain</option>
+            <option value="4">Eldora</option>
+            <option value="5">Keystone</option>
+            <option value="6">Loveland</option>
+            <option value="7">Telluride</option>
+            <option value="8">Vail</option>
+            <option value="9">Winter Park</option>
+          </select>
+        </p>
+        <section id="submit">
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </section>
+      </section>
+    </form>
+  </section>
+  <section id="table">
+    <h2>Accesible Table Example</h2>
+    <table>
+      <caption>Colorado Ski Mountains</caption>
+      <tr>
+        <th scope="col">Resort Name</th>
+        <th scope="col">Max Elevation</th>
+        <th scope="col">Vertical Elevation</th>
+      </tr>
+      <tr>
+        <th scope="row">Arapahoe Basin</th>
+        <td>13,500 feet</td>
+        <td>2,530 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Breckenridge</th>
+        <td>12,998 feet</td>
+        <td>3,398 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Copper Mountain</th>
+        <td>12,313 feet</td>
+        <td>2,601 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Eldora</th>
+        <td>10,600 feet</td>
+        <td>1,600 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Keystone</th>
+        <td>12,408 feet</td>
+        <td>3,128 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Loveland</th>
+        <td>13,010 feet</td>
+        <td>2,210 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Telluride</th>
+        <td>12,515 feet</td>
+        <td>3,790 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Vail</th>
+        <td>11,570 feet</td>
+        <td>3,450 feet</td>
+      </tr>
+      <tr>
+        <th scope="row">Winter Park</th>
+        <td>12,060 feet</td>
+        <td>3,060 feet</td>
+      </tr>
+  </section>
+</body>
+</html>
